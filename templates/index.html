@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Restaurants</title>
+</head>
+<body>
+    <h1>Dinner Date!</h1>
+    <h2>Find a place for a dinner date when you're in different cities </h2>
+    <form action="/search" method="POST">
+        <label for="address1">Address 1:</label>
+        <input type="text" id="address1" name="address1" required>
+        <br>
+        <label for="address2">Address 2:</label>
+        <input type="text" id="address2" name="address2" required>
+        <br>
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="restaurant">Restaurant</option>
+            <option value="meal_takeaway">Takeout</option>
+            <option value="meal_delivery">Delivery</option>
+        </select>
+        <br>
+        <label for="keyword">Keyword:</label>
+        <select id="keyword" name="keyword">
+            <option value="">None</option>
+            <option value="fast food">Fast Food</option>
+            <option value="pizza">Pizza</option>
+            <option value="mexican">Mexican</option>
+        </select>
+        <br>
+        <label for="distance">Distance:</label>
+        <select id="distance" name="distance">
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+        </select>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+
+
+
+</body>
+</html>
